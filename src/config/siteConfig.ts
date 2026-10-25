@@ -48,8 +48,9 @@ export const siteConfig: SiteConfig = {
 	subtitle: "记录学习笔记",
 
 	// 站点 URL
-	// TODO: 部署后改成你自己的域名（影响 RSS、sitemap、OG 图、分享链接等）
-	site_url: "https://example.com",
+	// GitHub Pages 项目页地址；以后绑定自定义域名（如 https://zhezhiblog.xxx）时改掉，
+	// 并同步把 astro.config.mjs 里的 base 改回 "/"
+	site_url: "https://zhezhi246.github.io",
 
 	// 站点描述
 	description:

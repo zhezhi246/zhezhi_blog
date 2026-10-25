@@ -69,7 +69,10 @@ const adapter = process.env.CF_WORKERS
 export default defineConfig({
 	site: siteConfig.site_url,
 
-	base: "/",
+	// 站点子路径：GitHub Pages 项目页部署在 zhezhi246.github.io/Firefly/ 下。
+	// 以后绑定自定义域名（如 zhezhiblog.xxx）时改回 "/"，
+	// 同时把 siteConfig.site_url 改成新域名（scripts/run-pagefind.ts 会自动读取这里的 base）。
+	base: "/Firefly/",
 	trailingSlash: "always",
 
 	// 字体配置 - 只加载实际使用的字体，跳过未引用的以加快构建

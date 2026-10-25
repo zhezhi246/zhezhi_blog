@@ -162,8 +162,8 @@ export function buildAtomFeed(opts: {
 		generator,
 		includeContent = true,
 	} = opts;
-	const siteRoot = toAbsoluteUrl(site, "/");
-	const selfLink = toAbsoluteUrl(site, "atom.xml");
+	const siteRoot = toAbsoluteUrl(site, import.meta.env.BASE_URL);
+	const selfLink = toAbsoluteUrl(site, `${import.meta.env.BASE_URL}atom.xml`);
 	const feedUpdated =
 		entries.reduce<Date | null>(
 			(latest, e) =>

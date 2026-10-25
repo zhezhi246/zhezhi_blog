@@ -9,6 +9,9 @@ import { resolveSiteRoot } from "./site-root";
 
 const siteRoot = resolveSiteRoot();
 
+// 索引输出到 <站点根>/pagefind。GitHub Pages 项目页会把整个产物挂载到 /<repo>/ 下，
+// 站内通过 url("/pagefind/pagefind.js") 加载（自动拼上 base），两者正好对应；
+// 搜索结果链接的 base 前缀由 Navbar 里 pagefind.options({ baseUrl }) 处理。
 const result = spawnSync("pagefind", ["--site", siteRoot], {
 	stdio: "inherit",
 	// Windows 下 .bin 里是 .cmd 包装，需要 shell 才能解析到
