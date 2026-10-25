@@ -106,7 +106,7 @@ export const backgroundWallpaper: BackgroundWallpaperConfig = {
 				{
 					name: "GitHub",
 					icon: "fa7-brands:github",
-					url: "https://github.com/zhezhia",
+					url: "https://github.com/zhezhi246",
 					showName: true,
 				},
 				{
